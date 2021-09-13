@@ -8,7 +8,7 @@ export const getCountriesApi = (payLoad) => ({
 });
 
 export const fetchCountries = () => async (dispatch) => {
-  const countries = await COUNTRIES_API.getCountriesApi();
+  const countries = await COUNTRIES_API.getCountries();
   if (countries) {
     dispatch(getCountriesApi(countries));
   }
