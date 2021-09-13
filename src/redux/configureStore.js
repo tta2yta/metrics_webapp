@@ -1,5 +1,5 @@
 import {
-  createStore, applyMiddleWare, combineReducers,
+  createStore, applyMiddleware, combineReducers,
 } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
@@ -11,7 +11,7 @@ const reducer = combineReducers({
 
 const store = createStore(
   reducer,
-  applyMiddleWare(logger, thunk),
+  applyMiddleware(logger, thunk),
 );
 
 export default store;
