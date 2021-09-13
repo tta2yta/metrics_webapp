@@ -3,3 +3,5 @@ const countriesList = () => (
     countriesList
   </div>
 );
+
+export default countriesList;
