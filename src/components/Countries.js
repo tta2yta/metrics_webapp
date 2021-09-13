@@ -1,11 +1,9 @@
-import countriesList from "./countriesList"
+import CountriesList from './countriesList';
 
-const countries=()=>{
-    return(
-        <div>
-            <countriesList />
-        </div>
-    )
-}
+const countries = () => (
+  <div>
+    <CountriesList />
+  </div>
+);
 
 export default countries;
