@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import getCountriesApi from '../redux/actions/conntriesAction';
+import fetchCountries from '../redux/actions/conntriesAction';
 
 const countriesList = () => {
   const countries = useSelector((state) => state.countries);
@@ -8,7 +8,7 @@ const countriesList = () => {
   console.log(countries);
 
   useEffect(() => {
-    dispatch(getCountriesApi());
+    dispatch(fetchCountries());
   });
   return (
     <div className="countries-list">
