@@ -12,7 +12,14 @@ const companiesList = () => {
   }, []);
   return (
     <div className="companies-list">
-      companiesList
+      {companies.map((item) => (
+        <div key={item.symbol}>
+          {' '}
+          <li>{item.symbol}</li>
+          <li>{item.price}</li>
+        </div>
+
+      ))}
     </div>
   );
 };
