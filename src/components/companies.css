@@ -1,0 +1,39 @@
+body{padding: 0;
+margin: 0;}
+.companies-list-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.companies-list{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    min-width: 100%;
+}
+.list-items{
+    border: 1px solid red;
+    text-align: center;
+    padding: 80px 75px;
+    font-weight: 700;
+    color: white;
+    size: 18px;
+}
+
+.bg-1{
+    background-color: blue;
+}
+.bg-2{
+    background-color: burlywood;
+}
+.companies-list:nth-child(4n-1) {
+    background: #CE4177;
+  }
+  .companies-list:nth-child(4n-4) {
+    background: #D7427D;
+  }
+  .companies-list:nth-child(4n-3) {
+    background: #D7427D;
+  }
+  .companies-list:nth-child(4n-2) {
+    background: #CE4177;
+  }
