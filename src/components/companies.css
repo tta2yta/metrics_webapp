@@ -1,29 +1,29 @@
 body{padding: 0;
 margin: 0;}
 .companies-list-main{
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .companies-list{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
     min-width: 100%;
 }
 .list-items{
-    border: 1px solid red;
     text-align: center;
-    padding: 80px 75px;
+    padding: 80px 50px;
+    justify-content: center;
+    
+}
+.symbol{
+    width: fit-content;
     font-weight: 700;
     color: white;
-    size: 18px;
+    font-size: 22px;
+    margin: auto;
 }
-
-.bg-1{
-    background-color: blue;
-}
-.bg-2{
-    background-color: burlywood;
+.price{
+    font-weight: 500;
+    color: white;
+    font-size: 19px;
 }
 .companies-list:nth-child(4n-1) {
     background: #CE4177;

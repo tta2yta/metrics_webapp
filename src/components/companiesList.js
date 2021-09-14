@@ -25,8 +25,8 @@ const companiesList = () => {
             }
           })()}
           <div className="list-items">
-            <div>{item.symbol}</div>
-            <div>{item.price}</div>
+            <div className="symbol">{item.symbol}</div>
+            <div className="price">{item.price}</div>
           </div>
         </div>
 
