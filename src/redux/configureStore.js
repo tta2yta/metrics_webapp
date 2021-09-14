@@ -3,10 +3,10 @@ import {
 } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import countriesReducer from './reducers/countriesReducers';
+import companiesReducer from './reducers/companiesReducers';
 
 const reducer = combineReducers({
-  countries: countriesReducer,
+  companies: companiesReducer,
 });
 
 const store = createStore(

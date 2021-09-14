@@ -1,6 +1,6 @@
-const countriesReducer = (state = [], action) => {
+const companiesReducer = (state = [], action) => {
   switch (action.type) {
-    case 'FETCH_COUNTRIES': {
+    case 'FETCH_COMPANIES': {
       console.log(action.payLoad);
       return { ...state, ...action.payLoad };
     }
@@ -9,4 +9,4 @@ const countriesReducer = (state = [], action) => {
   }
 };
 
-export default countriesReducer;
+export default companiesReducer;
