@@ -1,9 +1,15 @@
 import * as COMPANIES_API from '../../api/api';
 
 const FETCH_COMPANIES = 'FETCH_COMPANIES';
+const FETCH_COMPANY = 'FETCH_COMPANY';
 
 export const getCompaniesApi = (payLoad) => ({
   type: FETCH_COMPANIES,
+  payLoad,
+});
+
+export const getCompanyDetails = (payLoad) => ({
+  type: FETCH_COMPANY,
   payLoad,
 });
 
