@@ -19,5 +19,6 @@ export const fetchCompanies = () => async (dispatch) => {
     dispatch(getCompaniesApi(companies));
   }
 };
+// export const fetchCompanyDetails=()=>async(dispatch)=>{
 
-// export default getCountriesApi;
+// }
