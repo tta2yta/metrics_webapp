@@ -19,6 +19,9 @@ export const fetchCompanies = () => async (dispatch) => {
     dispatch(getCompaniesApi(companies));
   }
 };
-// export const fetchCompanyDetails=()=>async(dispatch)=>{
-
-// }
+export const fetchCompanyDetails=(sym)=>async(dispatch)=>{
+  const company = await COMPANIES_API.getCompaniesApi(sym);
+  if (company) {
+    dispatch(getCompaniesApi(company));
+  }
+}
