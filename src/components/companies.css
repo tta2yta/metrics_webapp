@@ -37,3 +37,40 @@ margin: 0;}
   .companies-list:nth-child(4n-2) {
     background: #CE4177;
   }
+  form{
+    border: none;
+  }
+  input[type="text"]{
+      width: 100%;
+      padding: 15px;
+      background-color: #FC5193;
+      color: white;
+      border: none;
+  }
+
+::-webkit-input-placeholder {
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: white;
+    opacity: 1 !important;
+    text-align: center;
+
+}
+h3{
+    background-color: #DF4783;
+    padding: 0;
+    margin: 0;
+    color: white;
+    border: none;
+    padding: 2px 0px;
+}

@@ -14,24 +14,27 @@ const companiesList = () => {
     dispatch(fetchCompanies());
   }, []);
   return (
-    <div className="companies-list-main">
-      {companies.map((item, index) => (
-        <div className="companies-list" key={item.symbol}>
-          {console.log(index)}
-          {(() => {
-            if (index % 2 === 0 && index !== 0) {
-              kkk = bg['bg-1'];
-              console.log(kkk);
-            }
-          })()}
-          <div className="list-items">
-            <div className="symbol">{item.symbol}</div>
-            <div className="price">{item.price}</div>
+    <>
+      <h3>STATS BY COMPANIES </h3>
+      <div className="companies-list-main">
+        {companies.map((item, index) => (
+          <div className="companies-list" key={item.symbol}>
+            {console.log(index)}
+            {(() => {
+              if (index % 2 === 0 && index !== 0) {
+                kkk = bg['bg-1'];
+                console.log(kkk);
+              }
+            })()}
+            <div className="list-items">
+              <div className="symbol">{item.symbol}</div>
+              <div className="price">{item.price}</div>
+            </div>
           </div>
-        </div>
 
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 };
 

@@ -1,6 +1,6 @@
 const filterCompanies = () => (
-  <form>
-    <input type="text" name="name" id="name" />
+  <form className="firter-company">
+    <input type="text" name="name" id="name" placeholder="Enter Company name or Symbol" />
   </form>
 );
 
