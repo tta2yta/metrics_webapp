@@ -17,7 +17,7 @@ const companiesList = () => {
         {companies.map((item, index) => (
           <div className="companies-list" key={item.symbol}>
             {console.log(index)}
-            <Link to="/details">
+            <Link to={`details/${item.symbol}`}>
               <div className="list-items">
                 <div className="symbol">{item.symbol}</div>
                 <div className="price">{item.price}</div>
