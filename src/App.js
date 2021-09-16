@@ -14,7 +14,7 @@ const routes = [
     component: <CompaniesStock />,
   },
   {
-    path: '/details',
+    path: '/details/:symbol',
     name: 'Details',
     component: <CompaniesDetails />,
   },

@@ -10,6 +10,17 @@ const companiesReducer = (state = [], action) => {
         return { symbol, price };
       });
     }
+    case 'FETCH_COMPANY': {
+      console.log(action.payLoad);
+      return action.payLoad.map((company) => {
+        const {
+          symbol,
+          price,
+        } = company;
+        return { selected: { symbol, price } };
+      });
+    }
+
     default:
       return state;
   }
